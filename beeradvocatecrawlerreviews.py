@@ -1,6 +1,7 @@
 import urllib
 import re
 import ujson
+import sys
 
 
 def read_beers(filename):
@@ -37,8 +38,11 @@ def find_list_of_beers(data,json,beerId):
         json.write(s+'\n')
 
 
-json = open('Review_0_1000.json','w')
-beers = read_beers("Beers_0_1000.json")
+
+start = sys.argv[1]
+stop = sys.argv[2]
+json = open('Review_'+start+'_'+stop+'.json','w')
+beers = read_beers('Beers_'+start+'_'+stop+'.json')
 for beer in beers:
     print beer['Name']
     for reviews in ['0','10','20','30','40','50','60','70','80','90']:

@@ -1,6 +1,7 @@
 import urllib
 import re
 import ujson
+import sys
 
 
 def remove_html_tags(data):
@@ -21,9 +22,12 @@ def find_list_of_beers(brewery, data):
             returnResults.append(beer)
     return returnResults
 
-json = open('Beers_1001_2000.json','w')
-x=1001
-while x<=2000:  #30260 is the full list
+start = sys.argv[1]
+stop = sys.argv[2]
+
+json = open('Beers_'+start+'_'+stop+'.json','w')
+x=int(start)
+while x<=int(stop):  #30260 is the full list
     f = urllib.urlopen("http://beeradvocate.com/beer/profile/"+str(x)+"/?view=beers&show=all")
     s = f.read()
     f.close()
