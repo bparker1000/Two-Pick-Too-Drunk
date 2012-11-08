@@ -1,5 +1,6 @@
 import urllib
 import re
+import ujson
 
 
 def remove_html_tags(data):
@@ -20,14 +21,14 @@ def find_list_of_beers(brewery, data):
             returnResults.append(beer)
     return returnResults
 
+json = open('Beers.json','w')
 x=1
-brewBeerDict = dict()
-while x<10:
-    f = urllib.urlopen("http://beeradvocate.com/beer/profile/"+str(x)+"/")
+while x<10:  #30260 is the full list
+    f = urllib.urlopen("http://beeradvocate.com/beer/profile/"+str(x)+"/?view=beers&show=all")
     s = f.read()
     f.close()
     title = s[s.find("<title>")+len("<title>"):s.find("-",s.find("<title>"))]
-    print title
+    print str(x) +' ' + title
     if title.find('404 Not Found')<0:
         beerNames = list()
         beers = find_list_of_beers(x,s)
@@ -36,8 +37,9 @@ while x<10:
             s = f.read()
             f.close()
             beerName = s[s.find("<title>")+len("<title>"):s.find("- "+title,s.find("<title>"))]
-            beerNames.append(beerName)
-        brewBeerDict[title] = beerNames
-    x+=1
+            BeerDump = {"BeerId":beer,"Name":beerName,"Brewery":title,"BreweryId":x}
+            s = ujson.dumps(BeerDump)
+            json.write(s+'\n')
 
-print brewBeerDict
+    x+=1
+json.close()
