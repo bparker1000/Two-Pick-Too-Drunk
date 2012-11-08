@@ -328,4 +328,170 @@
 {"BreweryId":15191,"BeerId":"34220","Name":"Allendale Curlew's Return ","Brewery":"Allendale Brew Company Limited "}
 {"BreweryId":15191,"BeerId":"34219","Name":"Allendale Wolf ","Brewery":"Allendale Brew Company Limited "}
 {"BreweryId":15191,"BeerId":"73028","Name":"Tar Bal'l ","Brewery":"Allendale Brew Company Limited "}
-{"BreweryId":15192,"BeerId":"56399","Name":"Barnes Wallis ","Brewery":"Amber 
+{"BreweryId":15192,"BeerId":"56399","Name":"Barnes Wallis ","Brewery":"Amber Ales Limited "}
+{"BreweryId":15192,"BeerId":"51663","Name":"Chocolate Orange Stout ","Brewery":"Amber Ales Limited "}
+{"BreweryId":15193,"BeerId":"34226","Name":"Oystercatcher ","Brewery":"Brimstage Brewing Co Ltd "}
+{"BreweryId":15193,"BeerId":"34224","Name":"Rhode Island Red ","Brewery":"Brimstage Brewing Co Ltd "}
+{"BreweryId":15193,"BeerId":"34225","Name":"Scarecrow ","Brewery":"Brimstage Brewing Co Ltd "}
+{"BreweryId":15193,"BeerId":"34223","Name":"Trappers Hat ","Brewery":"Brimstage Brewing Co Ltd "}
+{"BreweryId":15194,"BeerId":"72159","Name":"Old Sodbury Mild ","Brewery":"Cotswold Spring Brewery Ltd "}
+{"BreweryId":15195,"BeerId":"86572","Name":"Cotswold Farm Ale ","Brewery":"Cotswold Brewing Company "}
+{"BreweryId":15195,"BeerId":"42037","Name":"Uncle Dick's Cottage Ale ","Brewery":"Cotswold Brewing Company "}
+{"BreweryId":15196,"BeerId":"34234","Name":"Aquilifer ","Brewery":"Derventio Brewery Limited "}
+{"BreweryId":15196,"BeerId":"34236","Name":"Arminius ","Brewery":"Derventio Brewery Limited "}
+{"BreweryId":15196,"BeerId":"34232","Name":"Caesar ","Brewery":"Derventio Brewery Limited "}
+{"BreweryId":15196,"BeerId":"34228","Name":"Centurion ","Brewery":"Derventio Brewery Limited "}
+{"BreweryId":15196,"BeerId":"47488","Name":"Emperor's Whim ","Brewery":"Derventio Brewery Limited "}
+{"BreweryId":15196,"BeerId":"34230","Name":"Et Tu Brutus? ","Brewery":"Derventio Brewery Limited "}
+{"BreweryId":15196,"BeerId":"71378","Name":"Griffin ","Brewery":"Derventio Brewery Limited "}
+{"BreweryId":15196,"BeerId":"34235","Name":"Maia Mild ","Brewery":"Derventio Brewery Limited "}
+{"BreweryId":15196,"BeerId":"34231","Name":"Venus ","Brewery":"Derventio Brewery Limited "}
+{"BreweryId":15197,"BeerId":"57603","Name":"Imperium ","Brewery":"Empire Brewing "}
+{"BreweryId":15203,"BeerId":"34253","Name":"La Gwilh ","Brewery":"Fabrique De Bi\u00e8re Des Diaoulig "}
+{"BreweryId":15205,"BeerId":"56878","Name":"Brownhoist Nut Brown Ale ","Brewery":"Tri"}
+{"BreweryId":15205,"BeerId":"65480","Name":"Charity Island India Pale Ale ","Brewery":"Tri"}
+{"BreweryId":15205,"BeerId":"52180","Name":"Fortunato ","Brewery":"Tri"}
+{"BreweryId":15205,"BeerId":"47545","Name":"Giant Slayer ","Brewery":"Tri"}
+{"BreweryId":15205,"BeerId":"56437","Name":"Hell's Half Mile ","Brewery":"Tri"}
+{"BreweryId":15205,"BeerId":"42351","Name":"Loons' Summer Ale ","Brewery":"Tri"}
+{"BreweryId":15205,"BeerId":"60849","Name":"Lumberjack Pale Ale ","Brewery":"Tri"}
+{"BreweryId":15205,"BeerId":"72978","Name":"Oktoberfest ","Brewery":"Tri"}
+{"BreweryId":15205,"BeerId":"67729","Name":"Phelan Irish Red ","Brewery":"Tri"}
+{"BreweryId":15205,"BeerId":"34964","Name":"Phoenix Golden Ale ","Brewery":"Tri"}
+{"BreweryId":15205,"BeerId":"36616","Name":"Red Ale ","Brewery":"Tri"}
+{"BreweryId":15205,"BeerId":"76527","Name":"Wee Heavy Scotch Ale ","Brewery":"Tri"}
+{"BreweryId":15213,"BeerId":"38340","Name":"Citrus Summer ","Brewery":"Northstar Restaurant & Brewery "}
+{"BreweryId":15213,"BeerId":"40116","Name":"Lil' Bitter ","Brewery":"Northstar Restaurant & Brewery "}
+{"BreweryId":15213,"BeerId":"35100","Name":"Mahogany ","Brewery":"Northstar Restaurant & Brewery "}
+{"BreweryId":15213,"BeerId":"39042","Name":"Northside Negra ","Brewery":"Northstar Restaurant & Brewery "}
+{"BreweryId":15213,"BeerId":"39044","Name":"Octoberfest ","Brewery":"Northstar Restaurant & Brewery "}
+{"BreweryId":15213,"BeerId":"38339","Name":"Pic's Pale ","Brewery":"Northstar Restaurant & Brewery "}
+{"BreweryId":15213,"BeerId":"35101","Name":"Schwarzbier ","Brewery":"Northstar Restaurant & Brewery "}
+{"BreweryId":15218,"BeerId":"42621","Name":"5th Dimension Tripel ","Brewery":"C.B. & Potts "}
+{"BreweryId":15218,"BeerId":"41424","Name":"71 Pale ","Brewery":"C.B. & Potts "}
+{"BreweryId":15218,"BeerId":"47837","Name":"Apricot Ale ","Brewery":"C.B. & Potts "}
+{"BreweryId":15218,"BeerId":"52346","Name":"Barefoot Wit ","Brewery":"C.B. & Potts "}
+{"BreweryId":15218,"BeerId":"39776","Name":"Belgian IPA ","Brewery":"C.B. & Potts "}
+{"BreweryId":15218,"BeerId":"45987","Name":"Dunkelstilsken ","Brewery":"C.B. & Potts "}
+{"BreweryId":15218,"BeerId":"54923","Name":"Elephant IPA ","Brewery":"C.B. & Potts "}
+{"BreweryId":15218,"BeerId":"45988","Name":"Eyebrow Alt ","Brewery":"C.B. & Potts "}
+{"BreweryId":15218,"BeerId":"66044","Name":"Festive Ale ","Brewery":"C.B. & Potts "}
+{"BreweryId":15218,"BeerId":"52745","Name":"Frambozen ","Brewery":"C.B. & Potts "}
+{"BreweryId":15218,"BeerId":"66043","Name":"Grand Poo-ba ","Brewery":"C.B. & Potts "}
+{"BreweryId":15218,"BeerId":"39918","Name":"Grundy ","Brewery":"C.B. & Potts "}
+{"BreweryId":15218,"BeerId":"46311","Name":"Java The Hut ","Brewery":"C.B. & Potts "}
+{"BreweryId":15218,"BeerId":"46356","Name":"Lara Pale Ale ","Brewery":"C.B. & Potts "}
+{"BreweryId":15218,"BeerId":"49503","Name":"Maibock ","Brewery":"C.B. & Potts "}
+{"BreweryId":15218,"BeerId":"46309","Name":"Nutcracker ","Brewery":"C.B. & Potts "}
+{"BreweryId":15218,"BeerId":"46313","Name":"Rhine River Pils ","Brewery":"C.B. & Potts "}
+{"BreweryId":15218,"BeerId":"47838","Name":"Sebastin Bock ","Brewery":"C.B. & Potts "}
+{"BreweryId":15218,"BeerId":"58121","Name":"Winter Solstice ","Brewery":"C.B. & Potts "}
+{"BreweryId":15219,"BeerId":"78752","Name":"Solstice ","Brewery":"C.B. & Potts "}
+{"BreweryId":15229,"BeerId":"52802","Name":"Centennial Celebration Ale ","Brewery":"Moccasin Bend Brewing Co. "}
+{"BreweryId":15229,"BeerId":"55707","Name":"Centennial X5 ","Brewery":"Moccasin Bend Brewing Co. "}
+{"BreweryId":15229,"BeerId":"58488","Name":"Chattz South Coffee Stout ","Brewery":"Moccasin Bend Brewing Co. "}
+{"BreweryId":15229,"BeerId":"72899","Name":"Hop Soup ","Brewery":"Moccasin Bend Brewing Co. "}
+{"BreweryId":15229,"BeerId":"45397","Name":"Juniper Pale Ale ","Brewery":"Moccasin Bend Brewing Co. "}
+{"BreweryId":15229,"BeerId":"55710","Name":"New South Chocolate Stout ","Brewery":"Moccasin Bend Brewing Co. "}
+{"BreweryId":15229,"BeerId":"62106","Name":"Scarlet Imperial Red Ale ","Brewery":"Moccasin Bend Brewing Co. "}
+{"BreweryId":15229,"BeerId":"55709","Name":"Smoky Joe Brown ","Brewery":"Moccasin Bend Brewing Co. "}
+{"BreweryId":15229,"BeerId":"44103","Name":"Smoky Mountain Porter ","Brewery":"Moccasin Bend Brewing Co. "}
+{"BreweryId":15229,"BeerId":"60529","Name":"Super G IPA ","Brewery":"Moccasin Bend Brewing Co. "}
+{"BreweryId":15229,"BeerId":"55658","Name":"Sweet Potato Pale ","Brewery":"Moccasin Bend Brewing Co. "}
+{"BreweryId":15229,"BeerId":"44219","Name":"Watermelon Wheat ","Brewery":"Moccasin Bend Brewing Co. "}
+{"BreweryId":15237,"BeerId":"77746","Name":"5\u00b2 (Five Squared) ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"78907","Name":"AA (All Ale) ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"59378","Name":"Aardmoker - Earthmallet ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"34311","Name":"Aardmonnik - Earthmonk ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"48358","Name":"Besty ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"38334","Name":"Black Albert ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"48405","Name":"Black Damnation ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"55554","Name":"Black Damnation II - Mocha Bomb ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"56774","Name":"Black Damnation III - Black Mes ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"56775","Name":"Black Damnation IV - Coffee Club ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"77018","Name":"Black Damnation IX - Beggars\u2019 Art ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"56776","Name":"Black Damnation V - Double Black ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"70633","Name":"Black Damnation VI - Messy ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"73451","Name":"Black Damnation VII - Single Black ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"73449","Name":"Black Damnation VII - Single Black (DUPLICATE) ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"70632","Name":"Black Damnation VIII - S.H.I.T. ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"77017","Name":"Black Damnation X - Double Wood ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"44605","Name":"Black Damnation XI - Special Kay ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"45066","Name":"Black Jack ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"77745","Name":"Catso ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"81211","Name":"Cherilensis ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"47100","Name":"Cuvee Delphine ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"47590","Name":"Cuvee Mon Bijou ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"52576","Name":"Den Grooten Tocht ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"44910","Name":"Dirty Horse ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"53874","Name":"Doppel Strauss ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"77743","Name":"Earthnun ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"77741","Name":"Havic ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"77744","Name":"Hopverdomme ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"62070","Name":"Ignis Et Flamma ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"77016","Name":"Kabert ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"77830","Name":"Kate The Great ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"84620","Name":"Lions Claws - Bourbon Barrel Aged ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"84621","Name":"Madammeke - Bourbon Barrel Aged ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"59359","Name":"Moeder Lambik Amber ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"47053","Name":"Moeder Lambik Blond ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"76033","Name":"Motuecha ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"84623","Name":"O.N.E. (Our Nastiest Effort) - Bourbon Barrel Aged ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"66572","Name":"Outblack ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"34306","Name":"Pannepot ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"41690","Name":"Pannepot Grand Reserva ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"34312","Name":"Pannepot Reserva ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"75316","Name":"Pannepot Special Reserve ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"56780","Name":"Pannepot Wild ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"36198","Name":"Pannep\u00f8t - Old Monk's Ale ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"72091","Name":"Pannepeut ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"58119","Name":"Red Haired Jeanne (Roste Jeanne) ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"81244","Name":"Rio Reserva ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"48356","Name":"Schommelpeird ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"73488","Name":"Shark Pants ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"77742","Name":"Sniper ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"58905","Name":"St. Amatus 12 ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"48352","Name":"Struise \/ Alvinne Keralensis ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"39379","Name":"Struise \/ Mikkeller (Elliot Brew) ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"48378","Name":"Struise \/ Pipeworks Xenophon's Wine ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"34309","Name":"Struise Kloeke Blonde ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"40465","Name":"Struise New Years Blonde ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"66475","Name":"Dangerous Blonde ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"34307","Name":"Struise Rosse ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"34310","Name":"Struise Tsjeeses ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"46850","Name":"Struise Tsjeeses Reserva (2008-2011) ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"84824","Name":"Struise Tsjeeses Reserva (Bourbon Barrel Aged) ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"85638","Name":"Struise Tsjeeses Reserva (Porto Barrel Aged) ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"34308","Name":"Struise Witte ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"41010","Name":"Struiselensis ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"66623","Name":"Svea IPA ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"68218","Name":"Belgobaren IPA ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"84624","Name":"T.H.R.E.E. (The Holy Research Enters Europe) - Bourbon Barrel Aged ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"84622","Name":"T.W.O. (Totally Wiped Out) - Bourbon Barrel Aged ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"84243","Name":"Westoek X (Duplicate) ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"84618","Name":"XXX Rye Triple Ale ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15237,"BeerId":"84619","Name":"XXXX Quadruple Ale ","Brewery":"De Struise Brouwers "}
+{"BreweryId":15280,"BeerId":"27245","Name":"Atwater Bloktoberfest ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"86384","Name":"Atwater Blueberry Cobbler ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"73546","Name":"Atwater Bourbon Barrel Aged Shaman's Porter ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"47918","Name":"Atwater Cherry Stout ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"59143","Name":"Atwater Conniption Fit Double IPA ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"36895","Name":"Atwater D Light ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"55578","Name":"Atwater Double Down Imperial Amber Ale ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"12769","Name":"Atwater Dunkel ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"36660","Name":"Atwater Dunkel Weizen ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"72363","Name":"Atwater Grand Circus IPA ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"27242","Name":"Atwater Hefeweizen ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"10529","Name":"Atwater Hell Pale Lager ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"58446","Name":"Atwater Hopstrike ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"5325","Name":"Atwater Hummel Weizen ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"31104","Name":"Atwater Maibock ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"27244","Name":"Atwater Pale Ale ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"11457","Name":"Atwater Pilsner ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"29705","Name":"Atwater Rost ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"27243","Name":"Atwater Salvation IPA ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"28005","Name":"Atwater Shaman's Porter ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"82812","Name":"Atwater Summer Time Ale ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"80199","Name":"Atwater Traverse City Cherry Wheat ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"33336","Name":"Atwater Vanilla Java Porter ","Brewery":"Atwater Block Brewery "}
+{"BreweryId":15280,"BeerId":"67951","Name"
