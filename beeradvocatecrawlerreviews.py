@@ -25,16 +25,8 @@ def find_list_of_beers(data,json,beerId):
     reviewers.remove('<b>Beers</b>')
     reviewers.remove('<b>Events</b>')
     try:
-        reviewers.remove('<b>Reviews</b>')
         reviewers.remove('<b>average</b>')
         reviewers.remove('<b>average</b>')
-        reviewers.remove('<b>world-class</b>')
-        reviewers.remove('<b>exceptional</b>')
-        reviewers.remove('<b>good</b>')
-        reviewers.remove('<b>poor</b>')
-        reviewers.remove('<b>avoid/b>')
-        reviewers.remove('<b>must try</b>')
-        reviewers.remove('<b>try it</b>')
     except:
         pass
     for x in ratings:
@@ -49,8 +41,8 @@ def find_list_of_beers(data,json,beerId):
 
 start = sys.argv[1]
 stop = sys.argv[2]
-json = open('Reviews/Review_'+start+'_'+stop+'.json','w')
-beers = read_beers('Beers/Beers_'+start+'_'+stop+'.json')
+json = open('Review_'+start+'_'+stop+'.json','w')
+beers = read_beers('Beers_'+start+'_'+stop+'.json')
 for beer in beers:
     print beer['Name']
     for reviews in ['0','10','20','30','40','50','60','70','80','90']:
