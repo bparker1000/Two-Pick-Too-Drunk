@@ -21,9 +21,9 @@ def find_list_of_beers(brewery, data):
             returnResults.append(beer)
     return returnResults
 
-json = open('Beers.json','w')
-x=1
-while x<10:  #30260 is the full list
+json = open('Beers_1001_2000.json','w')
+x=1001
+while x<=2000:  #30260 is the full list
     f = urllib.urlopen("http://beeradvocate.com/beer/profile/"+str(x)+"/?view=beers&show=all")
     s = f.read()
     f.close()
