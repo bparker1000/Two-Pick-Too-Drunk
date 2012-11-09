@@ -19,10 +19,9 @@ def remove_extra_spaces(data):
 
 def find_list_of_beers(data,json,beerId):
     ratingPattern = re.compile(r'<span class=\"BAscore_norm\">\d+\.\d*</span>')
-    reviewPattern = re.compile(r'<b>\w+</b></a></h6>')
+    reviewPattern = re.compile(r'<b>([A-Za-z0-9\-\_]+)</b></a></h6>')
     reviewers = re.findall(reviewPattern,data)
     ratings = re.findall(ratingPattern, data)
-    print reviewers
     for x in ratings:
         rating = x.replace('<span class=\"BAscore_norm\">','')
         rating = rating.replace('</span>','')
