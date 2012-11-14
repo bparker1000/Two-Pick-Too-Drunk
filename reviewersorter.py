@@ -5,7 +5,7 @@ import re
 
 
 def main():
-    db = utils.connect_db('msl', remove_existing=True)
+    db = utils.connect_db('Two_Pick_Too_Drunk', remove_existing=True)
     reviewer_collection = db['reviewer']
     
     reviews = utils.read_beers()
@@ -16,6 +16,7 @@ def main():
     repeat = 0
     total_ratings = 0
 
+    ReviewerDictionary = dict()
 
     for review in reviews:
         
@@ -23,12 +24,10 @@ def main():
         temp_dic = review
         
         
-        if reviewer_collection.find_one({"reviewer" : temp_person}):
-            doc = reviewer_collection.find_one({"reviewer" : temp_person})
+        if temp_person in ReviewerDictionary:
             
-            doc[temp_dic['BeerId']]=temp_dic['rating']
+            ReviewerDictionary[temp_person]['Ratings'].append({'BeerId':temp_dic['BeerId'],'Rating':temp_dic['rating']})
             
-            reviewer_collection.update({"reviewer" : temp_person}, doc)
             total_ratings = float(temp_dic['rating']) + total_ratings
             repeat = repeat + 1
             
@@ -37,17 +36,22 @@ def main():
             count_unique = count_unique+1
             #temp_dic = review
             
-            doc = {"reviewer": temp_person,
-                    temp_dic['BeerId'] : temp_dic['rating']}
-            reviewer_collection.insert(doc)
+            ReviewerDictionary[temp_person] = {'Ratings' : [{"BeerId": temp_dic['BeerId'], 
+                                                           "Rating" : temp_dic['rating']}]}
+                 
             total_ratings = float(temp_dic['rating']) + total_ratings
 
             
         count= count +1
       
         
-   
+    for Reviewer in ReviewerDictionary:
+        doc = {"reviewer": Reviewer,
+               "Ratings":  ReviewerDictionary[Reviewer]['Ratings']
+              }
+        reviewer_collection.insert(doc)
 
+    
     print "Total lines ", count
     print "Repeated reviewers ", repeat
     print "Number of reviewers ",count_unique
@@ -65,10 +69,10 @@ def main():
     
     cursor = reviewer_collection.find()
     for d in cursor:
-        doc_length =len(d.keys())
-        if doc_length == 3:
+        doc_length =len(d['Ratings'])
+        if doc_length == 1:
             few_ratings +=1
-        elif doc_length < 8:
+        elif doc_length < 6:
             some_ratings +=1
         else:
             lots_ratings +=1
@@ -82,3 +86,5 @@ def main():
     
 if __name__=="__main__":
     main()
+
+
