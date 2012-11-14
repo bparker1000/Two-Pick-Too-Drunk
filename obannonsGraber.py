@@ -1,10 +1,14 @@
 import ujson
 import unicodedata
 import utils 
+from reviewersorter import review_sorter
 
 
 
 def main():
+    db = utils.connect_db('Two_Pick_Too_Drunk')
+    beer_collection = db['beers']
+
     ObannonsBeerList = ['42723', #1. *Great Divide Espresso Oak Aged Yeti (9.5%)
                         '40177', #2. *Buffalo Bills Blueberry Oatmeal Stout (7.5%)
                         '29015', #3.  Leinenkugel Sunset Wheat (4.2%)
@@ -83,13 +87,29 @@ def main():
 
 
     reviews = reviews = utils.read_beers()
-
+    obannonsReviews = list()
+    obannonsDict = dict()
     json = open('ObannonsData.json','w')
     for review in reviews:
         if review['BeerId'] in ObannonsBeerList:
+            obannonsReviews.append(review)
             s = ujson.dumps(review)
             json.write(s+'\n')
     json.close()
+    reviewersorter = review_sorter('obannons_reviews')
+    reviewersorter.sort_reviews(obannonsReviews)
+
+    for review in obannonsReviews:
+        if review['BeerId'] in obannonsDict:
+            obannonsDict[review['BeerId']].append(review['Reviewer'])
+        else:
+            obannonsDict[review['BeerId']] = [review['Reviewer']]
+
+    for beer in obannonsDict:
+        Beer = beer_collection.find_one({"BeerId":beer})
+        #print 'Beer: '+Beer['Brewery']+ ' '+ Beer['Name'] + '\nNumber of reviews: '+str(len(obannonsDict[beer]))+'\n'
+    
+
 
 if __name__=="__main__":
     main()
