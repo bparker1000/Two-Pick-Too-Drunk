@@ -81,7 +81,6 @@ def main():
     print "2-5 ratings", some_ratings
     print " more than 5 ratings", lots_ratings
     
-    
 
     
 if __name__=="__main__":
