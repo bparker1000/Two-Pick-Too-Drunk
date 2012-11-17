@@ -179,7 +179,6 @@ def main():
     reviews = reviewer_collection.find()
     cluster = ClusterAnalyer()
     cluster.cluster(reviews,db,sys.argv[1])
-    cluster.printResults()
 
 
 if __name__=="__main__":
