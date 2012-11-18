@@ -82,7 +82,9 @@ class ClusterAnalyer(object):
         print self.results
         cluster_collection = db[collection+'_cluster']
         for cluster in self.results['cluster']:
-            cluster_collection.insert({'Cluster':cluster,'Reviewers':self.results['cluster'][cluster]})
+            cluster_collection.insert({'Cluster':cluster,
+                                       'Reviewers':self.results['cluster'][cluster],
+                                       'Centroid':self.Centroids[cluster]})
 
     def find_cluster(self):
         print 'Assisgning Cluster'
