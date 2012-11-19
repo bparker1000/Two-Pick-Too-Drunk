@@ -82,10 +82,14 @@ class ClusterAnalyer(object):
         print '\n\n\n\nResults:'
         print self.results
         cluster_collection = db[collection+'_cluster']
+<<<<<<< HEAD
 
         
     
         for cluster in self.results['cluster']:        
+=======
+        for cluster in self.results['cluster']:
+>>>>>>> ttwwoo/master
             cluster_collection.insert({'Cluster':cluster,
                                        'Reviewers':self.results['cluster'][cluster],
                                        'Centroid':self.Centroids[cluster]})
