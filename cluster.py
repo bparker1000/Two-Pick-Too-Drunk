@@ -46,7 +46,7 @@ class ClusterAnalyer(object):
         for reviewer in self.reviewers.itervalues():
             reviewer['vect'] = self._normed_vect(reviewer['Ratings'])
 
-    def cluster(self,reviews,db,collection):
+    def cluster(self,reviews,db=None,collection=None):
         self.index_tweets(reviews)
         self.results = {'rss':1000000000000000}
         y=0
@@ -75,7 +75,8 @@ class ClusterAnalyer(object):
                 self.results['rss']=rss
                 self.results['cluster'] = copy.deepcopy(self.UserCentroidDict)
             y+=1
-        self._Print_and_Save_Results(db,collection)
+        if db and collection:
+            self._Print_and_Save_Results(db,collection)
         
 
     def _Print_and_Save_Results(self,db,collection):

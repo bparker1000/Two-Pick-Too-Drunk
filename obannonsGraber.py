@@ -84,8 +84,8 @@ def main():
                         '14712', #73. *Oskar Blues Old Chub Scottish Ale(6.5%)
                         '48933', #74. *Harpoon UFO White (4.8%)
                         '19956'] #75. *Rahr & Sons Blonde Lager (4.8%)
-
-
+    
+    print 'Sorting Obannon\'s reviews'
     reviews = utils.read_beers()
     obannonsReviews = list()
     obannonsDict = dict()
@@ -105,6 +105,7 @@ def main():
         else:
             obannonsDict[review['BeerId']] = [review['Reviewer']]
 
+    print 'Reveiews per Obannons Beers'
     for beer in obannonsDict:
         Beer = beer_collection.find_one({"BeerId":beer})
         print 'Beer: '+Beer['Brewery']+ ' '+ Beer['Name'] + '\nNumber of reviews: '+str(len(obannonsDict[beer]))+'\n'

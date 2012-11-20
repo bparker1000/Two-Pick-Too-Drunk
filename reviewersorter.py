@@ -45,8 +45,7 @@ class review_sorter():
                   }
             self.reviewer_collection.insert(doc)
 
-    
-        print "Total lines ", self.count
+        print "Total reviews ", self.count
         print "Repeated reviewers ", self.repeat
         print "Number of reviewers ",self.count_unique
         print "Average rating ", self.total_ratings/self.count
@@ -84,6 +83,7 @@ def main():
 
 
 if __name__=="__main__":
+    print "Sorting Reviewer Data"
     start_time = time.time()
     main()
     end_time = time.time()
