@@ -1,0 +1,26 @@
+#!/bin/sh
+echo 'python reviewersorter.py Reviews/Reviews.json'
+python reviewersorter.py Reviews/Reviews.json
+
+#adds Beers
+echo '\npython beerDatabaseAdder.py Beers/Beers.json'
+python beerDatabaseAdder.py Beers/Beers.json
+
+#Adds obannons reviews.  15 seconds
+echo '\npython obannonsGraber.py Reviews/Reviews.json'
+python obannonsGraber.py Reviews/Reviews.json
+
+echo "Do you wish to cluster obannons reviews? It will take 20-30 minutes"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) echo '\npython cluster.py obannons_reviews'; python cluster.py obannons_reviews; break;;
+        No ) break;;
+    esac
+done
+echo "Do you wish to cluster all reviews? It will take 2-3 hours"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) echo '\npython cluster.py reviewer'; python cluster.py reviewer; break;;
+        No ) break;;
+    esac
+done
