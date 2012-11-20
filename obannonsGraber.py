@@ -89,7 +89,7 @@ def main():
     reviews = utils.read_beers()
     obannonsReviews = list()
     obannonsDict = dict()
-    json = open('ObannonsData.json','w')
+    json = open('Reviews/ObannonsData.json','w')
     for review in reviews:
         if review['BeerId'] in ObannonsBeerList:
             obannonsReviews.append(review)

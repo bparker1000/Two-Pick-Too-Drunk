@@ -34,8 +34,8 @@ def find_list_of_beers(data,json,beerId):
 
 start = sys.argv[1]
 stop = sys.argv[2]
-json = open('Reviews/Review_'+start+'_'+stop+'.json','w')
-beers = read_beers('Beers/Beers_'+start+'_'+stop+'.json')
+json = open('../Reviews/Review_'+start+'_'+stop+'.json','w')
+beers = read_beers('../Beers/Beers_'+start+'_'+stop+'.json')
 for beer in beers:
     print beer['Name']
     for reviews in ['0','10','20','30','40','50','60','70','80','90']:
