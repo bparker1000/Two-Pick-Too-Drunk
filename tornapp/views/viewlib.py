@@ -2,7 +2,9 @@ import re
 import tornado.web
 from tornado.escape import json_encode, json_decode
 from pymongo import Connection
-
+from recommender import Recommender
+import utils
+from ObannonsBeerList import OBD
 
 class BaseHandler(tornado.web.RequestHandler):
 
@@ -185,70 +187,28 @@ class route(object):
 class UserRequestHandler(BaseHandler):
 
     def get(self):
-        OBD = {'2264':'#1.  Lagunitas Brown Sugar',
-               '24651':'#2.  Left Hand Polestar Pilsner'}  
         args = self.request.arguments
         if args:
             self.show_ratings(args,OBD)
         else:
             self.go_to_main_page(OBD)
 
-    def show_ratings(self,args,ObannonsBeerDict):        
-        self.render("ratings.html",OBD=ObannonsBeerDict,args=args)
+    def show_ratings(self,_args,ObannonsBeerDict):
+        args=list()
+        for arg in _args:
+            args.append({'BeerId':arg,'Rating':float(_args[arg][0]) })
+        user_ratings = args
+        db = utils.connect_db('Two_Pick_Too_Drunk')
+
+        reviews = 'obannons_reviews'
+        clusters = 'obannons_reviews_cluster'
+
+        recommenderer = Recommender()
+        (results,result_set) = recommenderer.recommender(user_ratings, reviews, clusters, db)
+        self.render("ratings.html",OBD=ObannonsBeerDict,results=results, result_set = result_set)
 
     def go_to_main_page(self,ObannonsBeerDict):
         
         self.render("index.html",OBD=ObannonsBeerDict)
 
 
-
-@route('/users')
-class UserRequestHandler(BaseHandler):
-    def get(self):
-        cat = self.get_argument("cat",None)
-        connection = Connection()
-        db = connection.Hackathon
-        collection = db['users']
-        if cat:
-            data = collection.find({"SubFolder":cat}).sort("Reputation",-1).limit(30)
-        else:
-            data = collection.find().sort("Reputation",-1).limit(30)
-        self.render("users.html",users=data, cat=cat)
-
-@route('/posts')
-class UserRequestHandler(BaseHandler):
-    def get(self):
-        cat = self.get_argument("cat",None)
-        connection = Connection()
-        db = connection.Hackathon
-        collection = db['posts']
-        if cat:
-            data = collection.find({"SubFolder":cat},limit=30).sort("Score",-1)
-        else:
-            data = collection.find(limit=30).sort("Score",-1)
-        catToWeb = {'android_enthusiasts':'http://android.stackexchange.com/questions/',
-                    'apple':'http://apple.stackexchange.com/questions/',
-                    'ask_ubuntu':'http://askubuntu.com/questions/1/',
-                    'cooking':'http://cooking.stackexchange.com/questions/',
-                    'game_development':'http://gamedev.stackexchange.com/questions/',
-                    'gamimg':'http://gaming.stackexchange.com/questions/',
-                    'photography':'http://photo.stackexchange.com/questions/1/',
-                    'programmers':'http://programmers.stackexchange.com/questions/',
-                    'security':'http://security.stackexchange.com/questions/',
-                    'server_fault':'http://serverfault.com/questions/',
-                    'unix_and_linux':'http://unix.stackexchange.com/questions/',
-                    'web_applications':'http://webapps.stackexchange.com/questions/'}
-
-        for x in data:
-            x['Website'] = catToWeb[x['SubFolder']] + x['Id']
-            if 'Title' not in x.keys():
-                x['Title'] = 'Comment'
-            x['Body']=self.remove_html_tags(x['Body'])
-
-            print x['Website'] + '\t' + x['Title']
-        self.render("posts.html",posts=data, cat=cat)
-
-
-    def remove_html_tags(self,data):
-	    p = re.compile(r'<.*?>')
-	    return p.sub('', data)

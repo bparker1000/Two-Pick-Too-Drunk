@@ -6,9 +6,12 @@ ratings
 
 
 {% block content %}
+{% set recommend = sorted(results,key =results.get, reverse = True) %}
 
-{% for arg in args %}
-    {{OBD[arg]}} : {{args[arg]}}<br>
+{% for beer in recommend %}
+    {% if beer in result_set %}
+        {{OBD[beer]}}  {{results[beer]}}<br>
+    {% end %}    
 {% end %}
 
 {% end %}

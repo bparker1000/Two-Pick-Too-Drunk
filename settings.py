@@ -16,6 +16,14 @@ torn_settings = dict(
     debug = False,
     debug_pdb = False,
 )
+
+try:
+    # pull in settings_local if it exists
+    from settings_local import settings as s
+    settings.update(s)
+except ImportError:
+    pass
+
 try:
     from settings_prod import torn_settings as ts
 except:

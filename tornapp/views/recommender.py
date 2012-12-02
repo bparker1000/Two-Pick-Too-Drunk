@@ -3,7 +3,6 @@ from collections import defaultdict
 import copy
 import re
 import time
-import utils
 import ujson
 import math
 import random
@@ -82,7 +81,7 @@ class Recommender(object):
             for x in self.beer_avg[beer]:   
                 total = total + float(x)
             avg = total/len(self.beer_avg[beer])
-            self.beer_reccomend[beer] = avg
+            self.beer_reccomend[beer] = round(avg,2)
 
         self.beer_final_avg = {}
         self.beer_final_avg = self.beer_reccomend
@@ -116,9 +115,7 @@ class Recommender(object):
                 print "\t Beer: ",thing['Name']
                 print "\t From: ",thing['Brewery'] 
                 break
-        
-    
-        
+        return (self.beer_final_avg,beer_reccomend_set)
        
     def CalcDistance(self, dict1, dict2):
         distance = 0
@@ -140,25 +137,26 @@ class Recommender(object):
         return vect
         
 
-def main():
-    """
-    Takes agrument from commandline, of json file that contains user's beer ratings
-    """
+#def main():
+#    """
+#    Takes agrument from commandline, of json file that contains user's beer ratings
+#    """
+#
+#    user_ratings = utils.read_beers()
+#    db = utils.connect_db('Two_Pick_Too_Drunk')
+#
+#    reviews = 'obannons_reviews'
+#    clusters = 'obannons_reviews_cluster'
 
-    user_ratings = utils.read_beers()
-    db = utils.connect_db('Two_Pick_Too_Drunk')
-
-    reviews = 'obannons_reviews'
-    clusters = 'obannons_reviews_cluster'
-
-    recommenderer = Recommender()
-    recommenderer.recommender(user_ratings, reviews, clusters, db)
+#    recommenderer = Recommender()
+#    recommenderer.recommender(user_ratings, reviews, clusters, db)
     
 
 
-if __name__=="__main__":
-    start_time = time.time()
-    main()
-    end_time = time.time()
-    print 'done with recommendation after %.3f seconds'%(end_time-start_time)
+#if __name__=="__main__":
+#    start_time = time.time()
+#    main()
+#    end_time = time.time()
+#    print 'done with recommendation after %.3f seconds'%(end_time-start_time)
+
 
