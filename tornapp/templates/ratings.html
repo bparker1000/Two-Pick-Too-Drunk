@@ -1,0 +1,22 @@
+{% extends base.html %}
+
+{% block title %}
+ratings
+{% end %}
+
+
+{% block content %}
+{% set recommend = sorted(results,key =results.get, reverse = True) %}
+
+{% for beer in recommend %}	
+    {% if beer in result_set %}
+        {{OBD[beer]}}  {{results[beer]}}<br>
+    {% end %}    
+
+{% end %}
+
+
+
+
+{% end %}
+
